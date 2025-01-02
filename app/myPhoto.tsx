@@ -7,7 +7,7 @@ const myPhoto = () => {
     <div className='m-10 relative'>
       <Image
         // src='https://www.w3schools.com/howto/img_avatar.png'
-        src='/my-portfolio-photo.jpeg'
+        src={me}
         alt='my-photo'
         // fill
         width={5000}

@@ -1,18 +1,21 @@
 import React from 'react';
 import Image from 'next/image';
+import Linkedin from '../public/linkedin.svg';
+import Github from '../public/github.svg';
+import Twitter from '../public/twitter.svg';
 
 const Links = () => {
   return (
     <div className='flex justify-between grow'>
       <Image
-        src='/linkedin.svg'
+        src={Linkedin}
         height={50}
         width={50}
         alt='linkedin'
         className='mr-6'
       />
       <Image
-        src='/github.svg'
+        src={Github}
         height={50}
         width={50}
         alt='github'
@@ -20,7 +23,7 @@ const Links = () => {
         className='mr-6'
       />
       <Image
-        src='/twitter.svg'
+        src={Twitter}
         height={50}
         width={50}
         alt='twitter'
