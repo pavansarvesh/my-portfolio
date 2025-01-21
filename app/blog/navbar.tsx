@@ -3,8 +3,11 @@ import React from 'react';
 
 const Navbar = () => {
   return (
-    <div className='flex justify-end text-l font-bold'>
-      <div className='flex justify-between'>
+    <div className='flex justify-between text-l font-bold'>
+      <div className='mt-10 ml-5 text-xl text-yellow-500'>
+        Pavan Sarvesh's Blog
+      </div>
+      <div className='flex justify-end'>
         <Link
           type='button'
           href={'/projects'}
@@ -14,15 +17,15 @@ const Navbar = () => {
         </Link>
         <Link
           type='button'
-          href={'/blog'}
+          href={'/'}
           className='mt-14 px-10 rounded-md transition duration-300 ease-in-out hover:text-yellow-500'
         >
-          Blog
+          Home
         </Link>
         <a
           href='/Pavan - Resume(paypal).pdf'
           download='Pavan-cv'
-          className='transition duration-300 ease-in-out m-11 ml-2 px-7 bg-yellow-500 text-gray-950 p-3 rounded-md hover:text-yellow-500 hover:bg-neutral-950'
+          className='transition duration-300 ease-in-out m-10 ml-2 p-3 px-7 bg-yellow-500 text-gray-950 rounded-md hover:text-yellow-500 hover:bg-neutral-950'
         >
           Resume
         </a>
