@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <main className={`${gabaritoFont.className}`}>
       <Navbar />
-      <div className='flex flex-col items-center pt-40'>
+      <div className='items-center pt-40 mx-auto max-w-screen-xl px-4 md:px-12 flex grow flex-col gap-y-6'>
         <MyPhoto />
         <Content />
         <Links />
