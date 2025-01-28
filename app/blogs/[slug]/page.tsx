@@ -2,13 +2,19 @@ import { allPosts } from 'contentlayer/generated';
 import { notFound } from 'next/navigation';
 import { useMDXComponent } from 'next-contentlayer2/hooks';
 import type { MDXComponents } from 'mdx/types';
-import GoBack from '../components/GoBack';
+import GoBack from '@/app/blog/components/GoBack';
 
+// import custom components and add below so that you can use it in mdx files
 const mdxComponents: MDXComponents = {};
 
-const PostLayout = ({ params }: { params: { slug: string } }) => {
+interface PostParams {
+  params: { slug: string };
+}
+
+const PostLayout = ({ params }: PostParams) => {
   const { slug } = params;
   const post = allPosts.find((post) => post._raw.flattenedPath === slug);
+
   if (!post) notFound();
 
   const MDXContent = useMDXComponent(post.body.code);
@@ -26,12 +32,19 @@ const PostLayout = ({ params }: { params: { slug: string } }) => {
 
 export default PostLayout;
 
-export const generateStaticParams = async () =>
-  allPosts.map((post) => ({ slug: post._raw.flattenedPath }));
+export const generateStaticParams = async () => {
+  return allPosts.map((post) => ({ slug: post._raw.flattenedPath }));
+};
 
-export const generateMetadata = async({ params }: { params: { slug: string } }) => {
-  const {slug} = await params;
+export const generateMetadata = async ({
+  params,
+}: {
+  params: { slug: string };
+}) => {
+  const { slug } = params;
   const post = allPosts.find((post) => post._raw.flattenedPath === slug);
+
   if (!post) notFound();
+
   return { title: post.title };
 };
