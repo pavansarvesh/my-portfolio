@@ -6,7 +6,7 @@ const GoBack = () => {
   return (
     <div>
       <Link
-        href={'/blogs'}
+        href={'/blog'}
         className='transition duration-300 ease-in-out text-xl font-semibold text-yellow-500 pb-12 hover:text-slate-200 no-underline'
       >
         Go Back
