@@ -3,13 +3,13 @@ import React from 'react';
 
 const Navbar = () => {
   return (
-    <div className='flex justify-between text-l font-bold '>
-      <div className='mt-14 ml-5 text-sm sm:text-xl text-yellow-500'>
+    <div className='flex justify-between text-l font-bold text-sm sm:text-xl'>
+      {/* <div className='mt-14 ml-5 text-sm sm:text-xl text-yellow-500'>
         <Link className='' href={'/'}>
           Pavan Sarvesh&apos;s Blog
         </Link>
-      </div>
-      <div className='flex justify-end'>
+      </div> */}
+      <div className='flex justify-end '>
         <Link
           type='button'
           href={'/projects'}
