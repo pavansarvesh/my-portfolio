@@ -5,9 +5,7 @@
 </div>
 
 🚀 **my-portfolio** is an opinionated, no-frills static blogging template built with
-[Next.js](https://nextjs.org/), [Tailwind CSS](https://tailwindcss.com/), and
-Extraordinarily loosely based on the [Astro Micro](https://astro-micro.vercel.app/) theme by
-[trevortylerlee](https://github.com/trevortylerlee).
+[Next.js](https://nextjs.org/), [Tailwind CSS](https://tailwindcss.com/).
 
 ---
 
