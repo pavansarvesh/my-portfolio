@@ -18,7 +18,7 @@ export default async function PostLayout({ params }: Props) {
   const post = await getBlogsFromParams(resolvedParams.slug);
 
   return (
-    <article className='prose prose-lg prose-neutral prose-headings:text-slate-200 mx-auto mt-5 text-yellow-500 prose-p:text-yellow-500 text-xs p-5 sm:p-0 sm:prose-code sm:text-lg flex flex-col flex-wrap'>
+    <article className='prose prose-sm prose-neutral prose-headings:text-slate-200 mx-auto px-7 mt-5 text-yellow-500 prose-p:text-yellow-500 text-xs p-5 sm:p-0 sm:prose-code sm:text-lg flex flex-col flex-wrap'>
       <div className='text-center'>
         <h1>{post.title}</h1>
       </div>
