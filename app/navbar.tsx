@@ -5,7 +5,7 @@ const Navbar = () => {
   return (
     <div className='flex justify-between text-l font-bold text-sm sm:text-xl pb-14'>
       <div className='mt-14 ml-5 text-sm sm:text-xl text-yellow-500'>
-        <Link className='' href={'/'}>
+        <Link href={'/'}>
           Pavan Sarvesh
         </Link>
       </div>

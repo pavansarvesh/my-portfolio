@@ -13,7 +13,7 @@ const gabaritoFont = Gabarito({
 export default function Home() {
   return (
     <main
-      className={`max-w-screen-xl mx-auto sm:h-svh ${gabaritoFont.className}`}
+      className={`max-w-screen-xl mx-auto sm:h-svh sm:pt-0${gabaritoFont.className}`}
     >
       <div className='hidden md:block'>
         {/* This is only visible on medium (768px) and larger screens. */}
