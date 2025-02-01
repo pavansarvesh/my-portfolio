@@ -1,0 +1,48 @@
+import Link from 'next/link';
+import Image from 'next/image';
+import React from 'react';
+import Menu from '../public/menu.svg';
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuLabel,
+  DropdownMenuTrigger,
+} from '@/components/ui/dropdown-menu';
+
+const NavbarMobile = () => {
+  return (
+    <div className='font-bold flex justify-between mx-9 my-7'>
+      <Link className='text-lg sm:text-xl text-yellow-500' href={'/'}>
+        Pavan Sarvesh
+      </Link>
+      <DropdownMenu>
+        <DropdownMenuTrigger>
+          <Image
+            src={Menu}
+            height={50}
+            width={50}
+            alt='Menu'
+            className='float-right size-6'
+          />
+        </DropdownMenuTrigger>
+        <DropdownMenuContent>
+          <DropdownMenuLabel>
+            <Link href={'/'}>Home</Link>
+          </DropdownMenuLabel>
+          {/* <DropdownMenuItem>
+            <Link href={'/about/'}>About</Link>
+          </DropdownMenuItem> */}
+          <DropdownMenuItem>
+            <Link href={'/blog/'}>Blog</Link>
+          </DropdownMenuItem>
+          <DropdownMenuItem>
+            <Link href={'/projects/'}>Projects</Link>
+          </DropdownMenuItem>
+        </DropdownMenuContent>
+      </DropdownMenu>
+    </div>
+  );
+};
+
+export default NavbarMobile;

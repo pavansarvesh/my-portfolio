@@ -1,5 +1,6 @@
 import React from 'react';
 import Navbar from './navbar';
+import NavbarMobile from '../navbarMobile';
 import { Gabarito } from 'next/font/google';
 import { allPosts } from 'contentlayer/generated';
 import PostCard from './components/PostCard';
@@ -15,22 +16,29 @@ const blogPage = () => {
   );
 
   return (
-    <div
-      className={`${gabaritoFont.className}`}
-    >
-      <Navbar />
-      {posts.map((post) => (
-        <div
-          key={post._id}
-          className='transition duration-300 ease-in-out rounded-lg p-5 hover:bg-neutral-900 marker:mx-auto mx-auto max-w-screen-xl px-4 md:px-12 flex grow flex-col gap-y-6'
-        >
-          <ul>
-            <li>
-              <PostCard {...post} />
-            </li>
-          </ul>
-        </div>
-      ))}
+    <div className={`max-w-screen-xl mx-auto h-svh ${gabaritoFont.className}`}>
+      <div className='hidden md:block'>
+        {/* This is only visible on medium (768px) and larger screens. */}
+        <Navbar />
+      </div>
+      <div className='block md:hidden pt-7'>
+        {/* This is only visible on medium (768px) and smaller screens. */}
+        <NavbarMobile />
+      </div>
+      <div className='p-10 pt-16 sm:p-0'>
+        {posts.map((post) => (
+          <div
+            key={post._id}
+            className='transition duration-300 ease-in-out rounded-lg p-5 sm:p-10 lg:hover:bg-neutral-900  '
+          >
+            <ul>
+              <li>
+                <PostCard {...post} />
+              </li>
+            </ul>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };
