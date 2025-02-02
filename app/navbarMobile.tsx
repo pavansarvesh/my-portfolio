@@ -27,18 +27,18 @@ const NavbarMobile = () => {
           />
         </DropdownMenuTrigger>
         <DropdownMenuContent>
-          <DropdownMenuLabel>
-            <Link href={'/'}>Home</Link>
-          </DropdownMenuLabel>
+          <Link href={'/'}>
+            <DropdownMenuLabel>Home</DropdownMenuLabel>
+          </Link>
           {/* <DropdownMenuItem>
             <Link href={'/about/'}>About</Link>
           </DropdownMenuItem> */}
-          <DropdownMenuItem>
-            <Link href={'/blog/'}>Blog</Link>
-          </DropdownMenuItem>
-          <DropdownMenuItem>
-            <Link href={'/projects/'}>Projects</Link>
-          </DropdownMenuItem>
+          <Link href={'/blog/'}>
+            <DropdownMenuItem>Blog</DropdownMenuItem>
+          </Link>
+          <Link href={'/projects/'}>
+            <DropdownMenuItem>Projects</DropdownMenuItem>
+          </Link>
         </DropdownMenuContent>
       </DropdownMenu>
     </div>
