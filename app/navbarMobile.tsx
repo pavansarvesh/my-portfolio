@@ -30,9 +30,9 @@ const NavbarMobile = () => {
           <Link href={'/'}>
             <DropdownMenuLabel>Home</DropdownMenuLabel>
           </Link>
-          {/* <DropdownMenuItem>
+          <DropdownMenuItem>
             <Link href={'/about/'}>About</Link>
-          </DropdownMenuItem> */}
+          </DropdownMenuItem>
           <Link href={'/blog/'}>
             <DropdownMenuItem>Blog</DropdownMenuItem>
           </Link>

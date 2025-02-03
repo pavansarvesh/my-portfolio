@@ -11,13 +11,13 @@ const Navbar = () => {
       </div>
       <div className='flex justify-end mx-9 text-base font-bold'>
         <div className='flex justify-between'>
-          {/* <Link
+          <Link
             type='button'
             href={'/about'}
             className='mt-14 sm:px-6 transition duration-300 ease-in-out hover:text-yellow-500'
           >
             About
-          </Link> */}
+          </Link>
           <Link
             type='button'
             href={'/blog'}
