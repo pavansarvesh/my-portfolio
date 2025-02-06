@@ -3,9 +3,9 @@ import NavbarMobile from './navbarMobile';
 import Content from './content';
 import MyPhoto from './myPhoto';
 import Links from './links';
-import Image from 'next/image';
+// import Image from 'next/image';
 import { Gabarito } from 'next/font/google';
-import downArrow from './../public/downArrow.svg';
+// import downArrow from './../public/downArrow.svg';
 // import { font } from './../public/fonts/OffBitTrial-DotBold.otf';
 
 const gabaritoFont = Gabarito({
