@@ -10,7 +10,7 @@ const myPhoto = () => {
         alt='my-photo'
         width={5000}
         height={5000}
-        className='rounded-full size-40 sm:size-60 border-yellow-500 border-4'
+        className='rounded-full size-40 sm:size-60 border-white border-4'
       />
     </div>
   );
