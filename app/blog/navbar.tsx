@@ -31,7 +31,7 @@ const Navbar = () => {
             Projects
           </Link>
           <Link
-            href='/Pavan - Resume(paypal).pdf'
+            href='/Pavan - Resume.pdf'
             download='Pavan-cv'
             className='mt-14 px-5 sm:px-6 rounded-md transition duration-300 ease-in-out hover:text-yellow-500'
           >
